@@ -1,0 +1,24 @@
+> mydata<-read.csv("C:/Users/Onkar/Desktop/pca_gsp.csv")
+> mydata<-read.csv(file.choose())
+> attach(mydata)
+> summary(mydata)
+                                                                 
+> names(mydata)
+ > cor(mydata)
+> cor(X)
+> X
+> summary(X)
+> pcal<-princomp(X, scores=TRUE, cor=TRUE)
+> summary(pcal)
+> loadings(pcal)
+> plot(pcal)
+> screenplot(pcal,type="line",main="Screen Plot")
+Error in screenplot(pcal, type = "line", main = "Screen Plot") : 
+  could not find function "screenplot"
+> screeplot(pcal,type="line",main="Screen Plot")
+> biplot(pcal)
+> pcal$scores[1:10,]
+> plot(pcal)
+> biplot(pcal)
+> screeplot(pcal,type="line",main="Screen Plot")
+> 
